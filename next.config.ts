@@ -1,15 +1,15 @@
 // next.config.ts
 import type { NextConfig } from "next";
 
-const repoName = process.env.REPO_NAME || ""; // Set this when exporting: REPO_NAME=repo-name
+const repoName = "storetech-pitch";
 
 const nextConfig: NextConfig = {
-  output: "export",                  
-  reactCompiler: true,               
-  basePath: repoName ? `/${repoName}` : "",
-  assetPrefix: repoName ? `/${repoName}/` : "",
+  output: "export",
+  reactCompiler: true,
+  basePath: `/${repoName}`,       
+  assetPrefix: `/${repoName}`,   
   images: {
-    unoptimized: true,               
+    unoptimized: true,
   },
 };
 

@@ -10,7 +10,7 @@ import USExpansion from "@/sections/company/USExpansion";
 export const metadata = {
   title: "StoreTech Company - Market-Leading Unmanned Retail Platform",
   description:
-    "StoreTech has deployed 170 stores across Europe with 50M+ transactions and 99.7% success rate. Learn about our team, market validation, and expansion strategy.",
+    "StoreTech has deployed 145 stores across Europe with 50M+ transactions and 99.7% success rate. Learn about our team, market validation, and expansion strategy.",
 };
 
 export default function page() {

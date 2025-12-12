@@ -2,18 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import AutoTyped from "../../components/common/AutoTyped";
 import ParticleBackground from "../../components/home/ParticleBackground";
+import { autoTypeData } from "@/data/metrics";
+
 
 export default function HeroBanner() {
-  const autoTypeData = {
-    strings: [
-      "170 stores deployed across Europe",
-      "50M+ transactions processed",
-      "99.7% transaction success rate",
-      "Deploy in just 10 days",
-    ],
-    color: "text-blue-500",
-    cursorChar: "|",
-  };
 
   return (
     <section

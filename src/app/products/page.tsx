@@ -1,5 +1,5 @@
-import CalltoCation from "@/sections/products/CalltoCation";
-import ERPMobileApps from "@/sections/products/ERPMobileApps";
+import CalltoCation from "@/sections/products/Removed/CalltoCation";
+import ERPMobileApps from "@/sections/products/Removed/ERPMobileApps";
 import HeroSection from "@/sections/products/HeroSection";
 import ProductModules from "@/sections/products/ProductModules";
 import SolutionPackages from "@/sections/products/SolutionPackages";
@@ -17,10 +17,10 @@ export default function page() {
     <>
       <HeroSection />
       <ProductModules />
-      <ERPMobileApps />
+      {/* <ERPMobileApps /> properly working component But removed  */}
       <SolutionPackages />
       <TechnicalSpecifications />
-      <CalltoCation />
+      {/* <CalltoCation /> properly working component But removed */}
     </>
   );
 }

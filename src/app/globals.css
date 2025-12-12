@@ -23,6 +23,23 @@
   font-family: var(--font-grotesk);
 }
 
+.custom-notification {
+  background: rgba(17, 24, 39, 0.5); /* bg-gray-900/50 */
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.custom-notification .ant-notification-notice-message {
+  color: #fff;
+  font-weight: 600;
+}
+
+.custom-notification .ant-notification-notice-description {
+  color: #d1d5db; 
+}
+
+
 body {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: #ffffff;

@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/common/SectionTitle";
+import ContactForm from "@/components/home/Removed/ContactForm";
 
 export default function Contact() {
   const data = [
@@ -22,7 +23,7 @@ export default function Contact() {
         <SectionTitle type="Minimal" description="Join the unmanned retail revolution. Deploy in 10 days with 60% cost savings.">
           Ready to Transform Retail?
         </SectionTitle>
-        <div className="animate-on-scroll">
+        <div className="animate-on-scroll mt-10">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {data.map((v) => (
               <RetailCard key={v.title} lable={v.label}>
@@ -31,7 +32,9 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+               <ContactForm />
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
             <a
               href="mailto:invest@storetech.com"
               className="btn-primary px-8 py-4 rounded-lg text-white font-semibold text-lg"
@@ -52,6 +55,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+ 
     </section>
   );
 }
@@ -70,3 +74,5 @@ function RetailCard({
     </div>
   );
 }
+
+

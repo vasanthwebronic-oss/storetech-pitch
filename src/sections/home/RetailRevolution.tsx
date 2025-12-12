@@ -1,34 +1,7 @@
 import SectionTitle from "@/components/common/SectionTitle";
+import { retailRevolutionData, RetailCardType } from "@/data/RetailData";
 
 export default function RetailRevolution() {
-  const retailRevolutionData: RetailCardType[] = [
-    {
-      title: "The Old Way",
-      description:
-        "Legacy setups drain time and budget with fragmented vendors and long deployment cycles.",
-      textcolor: "text-red-400",
-      bgcolor: "bg-red-400",
-      points: [
-        "Multiple hardware vendors",
-        "Complex integration projects",
-        "3–6 month deployment cycles",
-        "$15K–$50K per location",
-      ],
-    },
-    {
-      title: "The StoreTech Way",
-      description:
-        "A unified, modern platform that simplifies deployment and cuts total cost per store.",
-      textcolor: "text-green-400",
-      bgcolor: "bg-green-400",
-      points: [
-        "Single consolidated platform",
-        "Plug-and-play deployment",
-        "10-day average deployment",
-        "$5K–$8K per location",
-      ],
-    },
-  ];
 
   return (
     <section className="py-20 md:py-24 relative">
@@ -47,13 +20,6 @@ export default function RetailRevolution() {
   );
 }
 
-type RetailCardType = {
-  title: string;
-  description: string;
-  textcolor: string;
-  bgcolor: string;
-  points: string[];
-};
 function RevolutionCard({
   title,
   description,

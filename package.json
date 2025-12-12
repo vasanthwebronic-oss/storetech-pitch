@@ -13,6 +13,7 @@
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
     "animejs": "^3.2.1",
+    "antd": "^6.1.0",
     "echarts": "^6.0.0",
     "echarts-stat": "^1.2.0",
     "next": "16.0.7",

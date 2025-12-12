@@ -1,6 +1,7 @@
-import EAFeatureCard, { EACardType } from "@/components/products/EAFeatureCard";
+import EAFeatureCard, { EACardType } from "@/sections/products/Removed/EAFeatureCard";
 
 export default function ERPMobileApps() {
+  
   const featuresData: EACardType[] = [
     {
       title: "Centralized ERP & Analytics",

@@ -12,11 +12,10 @@ export default function EuropeanDeployment() {
     {
       title: "24sju Convenience Stores",
       stats: [
-        { label: "Stores Launched", value: 80 },
+        { label: "Stores Launched", value: 120 },
         { label: "Months", value: 18 },
       ],
       bullets: [
-        "10-day rollout cadence achieved",
         "65% lower technology costs",
         "40% revenue uplift from extended hours",
       ],
@@ -25,7 +24,7 @@ export default function EuropeanDeployment() {
     {
       title: "Tanlux Tanning Studios",
       stats: [
-        { label: "Salons", value: 40 },
+        { label: "Salons", value: 10 },
         { label: "Labor Reduction", value: "70%" },
       ],
       bullets: [
@@ -58,7 +57,7 @@ export default function EuropeanDeployment() {
       tooltip: { trigger: "item" },
       visualMap: {
         min: 1,
-        max: 120,
+        max: 145,
         left: "left",
         bottom: "20px",
         text: ["High Installs", "Low Installs"],

@@ -1,3 +1,4 @@
+import GetQuoteButton from "@/components/common/GetQuoteButton";
 import SectionTitle from "@/components/common/SectionTitle";
 import SolutionCard, {SolutionTypes} from "@/components/products/SolutionCard";
 
@@ -8,9 +9,7 @@ export default function SolutionPackages() {
       id: "A",
       title: "Package A",
       subtitle: "Express Checkout",
-      price: 3000,
       color:"text-blue-400",
-      priceLabel: "per location",
       features: [
         "Smart Self-Checkout",
         "ERP & Analytics",
@@ -24,9 +23,7 @@ export default function SolutionPackages() {
       id: "B",
       title: "Package B",
       subtitle: "24/7 Unmanned Store",
-      price: 6500,
       color:"text-orange-400",
-      priceLabel: "per location",
       features: [
         "Smart Self-Checkout",
         "Door Access Control",
@@ -42,9 +39,8 @@ export default function SolutionPackages() {
       id: "C",
       title: "Package C",
       subtitle: "Corporate Micro-Market",
-      price: 8500,
       color:"text-purple-400",
-      priceLabel: "per location",
+
       features: [
         "Smart Self-Checkout",
         "Smart Fridge",
@@ -59,7 +55,7 @@ export default function SolutionPackages() {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 ">
       <div className="max-w-7xl mx-auto px-6">
         <SectionTitle description="Pre-configured packages for common use cases. Start with a package and customize as needed.">
             Solution Packages
@@ -79,12 +75,9 @@ export default function SolutionPackages() {
               Build your own solution package with our modular platform. Mix and
               match products to fit your specific needs.
             </p>
-            <a
-              href="index.html"
-              className="btn-primary px-8 py-3 rounded-lg text-white font-medium"
-            >
-              Configure Custom Solution
-            </a>
+            <GetQuoteButton modules={[]}>
+              Request Custom Quotation  
+            </GetQuoteButton>
           </div>
         </div>
       </div>

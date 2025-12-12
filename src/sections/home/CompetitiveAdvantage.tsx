@@ -11,14 +11,14 @@ export default function CompetitiveAdvantage() {
         <div className="comparison-matrix animate-on-scroll">
           <div className="overflow-auto lg:overflow-visible rounded-xl ">
             <table className="w-full text-left rounded-xl ">
-              <thead>
-                <tr className="border-b border-gray-700 bg-gray-900/50">
-                  <th className="pb-4 pr-8 pl-6 pt-6 text-base font-semibold text-gray-200 uppercase tracking-wider">
+              <thead className=" ">
+                <tr className=" border-b border-gray-700 bg-gray-900/50">
+                  {/* <th className="pb-4 pr-8 pl-6 pt-6 text-base font-semibold text-gray-200 uppercase tracking-wider">
                     Solution
                   </th>
                   <th className="pb-4 px-8 pt-6 text-base font-semibold text-gray-200 uppercase tracking-wider">
                     Deployment Time
-                  </th>
+                  </th> */}
                   <th className="pb-4 px-8 pt-6 text-base font-semibold text-gray-200 uppercase tracking-wider">
                     Cost per Store
                   </th>
@@ -41,7 +41,7 @@ export default function CompetitiveAdvantage() {
                       Computer vision solution
                     </div>
                   </td>
-                  <td className="py-5 px-8">
+                  {/* <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       6-12 months
                     </span>
@@ -50,7 +50,7 @@ export default function CompetitiveAdvantage() {
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       $50K-$100K
                     </span>
-                  </td>
+                  </td> */}
                   <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -78,7 +78,7 @@ export default function CompetitiveAdvantage() {
                       Legacy self-checkout
                     </div>
                   </td>
-                  <td className="py-5 px-8">
+                  {/* <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       3-6 months
                     </span>
@@ -87,7 +87,7 @@ export default function CompetitiveAdvantage() {
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       $15K-$50K
                     </span>
-                  </td>
+                  </td> */}
                   <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500/10 text-red-400 border border-red-500/20">
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -115,7 +115,7 @@ export default function CompetitiveAdvantage() {
                       Computer vision only
                     </div>
                   </td>
-                  <td className="py-5 px-8">
+                  {/* <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                       2-4 months
                     </span>
@@ -124,7 +124,7 @@ export default function CompetitiveAdvantage() {
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                       $20K-$40K
                     </span>
-                  </td>
+                  </td> */}
                   <td className="py-5 px-8">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -157,7 +157,7 @@ export default function CompetitiveAdvantage() {
                       </div>
                     </div>
                   </td>
-                  <td className="py-6 px-8">
+                  {/* <td className="py-6 px-8">
                     <span className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold bg-green-500/15 text-green-400 border border-green-500/30 shadow-lg shadow-green-500/10">
                       10 days
                     </span>
@@ -166,7 +166,7 @@ export default function CompetitiveAdvantage() {
                     <span className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold bg-green-500/15 text-green-400 border border-green-500/30 shadow-lg shadow-green-500/10">
                       $5K-$8K
                     </span>
-                  </td>
+                  </td> */}
                   <td className="py-6 px-8">
                     <span className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold bg-green-500/15 text-green-400 border border-green-500/30 shadow-lg shadow-green-500/10">
                       <svg className="w-6 h-6 mr-2 animate-pulse" fill="currentColor" viewBox="0 0 20 20">

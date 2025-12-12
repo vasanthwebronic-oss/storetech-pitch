@@ -1,19 +1,14 @@
 "use client";
 
+import { autoTypedType } from "@/data/metrics";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-
-interface autoTypedData {
-  strings: string[];
-  color: string;
-  cursorChar: string;
-}
 
 export default function AutoTyped({
   strings,
   color,
   cursorChar,
-}: autoTypedData) {
+}: autoTypedType) {
   const typedRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {

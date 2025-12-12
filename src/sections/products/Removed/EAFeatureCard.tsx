@@ -8,6 +8,7 @@ export type EACardType = {
     items: string[];
   }[];
 };
+
 export default function EAFeatureCard({
   title,
   price,

@@ -26,7 +26,6 @@ export default function ProductConfigurator() {
     "selectedModules",
     []
   );
-  const { set: setStoredModules } = useLocalStorage<string[]>("selectedModules", []);
   const [contactData, setcontactData] = useState<contacType>(initContactData);
   const [noti, contextHolder] = notification.useNotification();
   const [isLoding, setisLoding] = useState(false);
@@ -57,50 +56,27 @@ export default function ProductConfigurator() {
   useEffect(() => {
     console.log(modules);
   }, [modules]);
-
+  
   const handleToggleModule = (key: ModuleKey) => {
-  setModules((prev) => {
-    // compute new toggled state for this key
-    const toggled = !prev[key].selected;
-
-    // build the next modules state
-    const next = {
+    setModules((prev) => ({
       ...prev,
-      [key]: { ...prev[key], selected: toggled },
-    };
+      [key]: { ...prev[key], selected: !prev[key].selected },
+    }));
 
-    // compute selected keys efficiently without iterating full object twice
-    // (use moduleKeys to preserve order & type)
-    const selectedKeys = moduleKeys.filter((k) =>
-      k === key ? toggled : prev[k].selected
-    );
+    // selection "bounce" animation using anime.js
+    const el = document.querySelector(
+      `.product-configurator [data-module="${key}"]`
+    ) as HTMLElement | null;
 
-    // persist selectedKeys to localStorage via your hook
-    // If empty, you can clear it by setting [] or removing — here we set [].
-    try {
-      setStoredModules(selectedKeys);
-    } catch (err) {
-      // optional: report to monitoring
-      console.error("Failed to update stored selectedModules", err);
+    if (el) {
+      anime({
+        targets: el,
+        scale: [1, 1.1, 1],
+        duration: 300,
+        easing: "easeOutElastic(1, .8)",
+      });
     }
-
-    return next;
-  });
-
-  // run selection bounce animation using anime.js
-  const el = document.querySelector(
-    `.product-configurator [data-module="${key}"]`
-  ) as HTMLElement | null;
-
-  if (el) {
-    anime({
-      targets: el,
-      scale: [1, 1.1, 1],
-      duration: 300,
-      easing: "easeOutElastic(1, .8)",
-    });
-  }
-};
+  };
 
   const applyPreset = (preset: PresetKey) => {
     const moduleKeys = presets[preset];

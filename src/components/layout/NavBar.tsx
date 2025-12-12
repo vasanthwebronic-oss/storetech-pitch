@@ -9,7 +9,7 @@ export default function NavBar() {
     { href: "/", children: "Home" },
     { href: "/products", children: "Products" },
     { href: "/company", children: "Company" },
-    { href: "/#contact", children: "Contact", isButton: true },
+    { href: "/#getQuote", children: "Request Quotation", isButton: true },
   ];
   const [isMobileNav, setisMobileNav] = useState(false);
   const path = usePathname();

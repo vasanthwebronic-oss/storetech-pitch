@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "StoreTech - The Future of Unmanned Retail",
   description:
-    "StoreTech provides a complete platform for operating unmanned retail formats with 60% lower costs and 10-day deployment. 170 stores, 50M+ transactions across Europe.",
+    "StoreTech provides a complete platform for operating unmanned retail formats with 60% lower costs. 145+ stores, 50M+ transactions across Europe.",
 };
 
 export default function RootLayout({

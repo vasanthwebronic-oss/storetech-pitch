@@ -1,12 +1,8 @@
 import MetricCard from "@/components/common/MetricCard";
+import { metrics } from "@/data/metrics";
+
 
 export default function KeyMetrics() {
-  const metrics = [
-    { children: "170", label: "Stores Live" },
-    { children: "50M+", label: "Transactions" },
-    { children: "99.7%", label: "Success Rate" },
-    { children: "10", label: "Days to Deploy" },
-  ];
 
   return (
     <section className="py-20 relative">

@@ -2,33 +2,35 @@ export type SolutionTypes = {
   id: string;
   title: string;
   subtitle: string;
-  price: number;
   color: string;
-  priceLabel: string;
   features: string[];
   buttonLabel: string;
   featured: boolean;
+  price?: number;
+  priceLabel?: string;
 };
 export default function SolutionCard({
   id,
   title,
   subtitle,
-  price,
   color,
-  priceLabel,
   features,
   buttonLabel,
   featured,
+  price,
+  priceLabel,
 }: SolutionTypes) {
   return (
     <div
-      className={`package-card ${
-        featured ? "featured" : ""
-      } p-8 rounded-2xl animate-on-scroll`}
+      className={`package-card flex flex-col ${
+        featured ? "featured overflow-hidden" : ""
+      } px-8 py-12 rounded-2xl animate-on-scroll`}
     >
       <div className="text-center mb-6">
         {featured && (
-          <div className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-2">
+          <div 
+          style={{ clipPath: "polygon(0 0, 100% 0, 90% 100%, 10% 100%)"}}
+          className="bg-orange-600  absolute top-0 w-full left-0 text-white px-3 py-3  text-sm font-semibold mb-2">
             Most Popular
           </div>
         )}
@@ -37,10 +39,12 @@ export default function SolutionCard({
         <div className={`${color} font-semibold`}>{subtitle}</div>
       </div>
 
-      <div className="text-center mb-6">
-        <div className="text-3xl font-bold gradient-text mb-2">${price}</div>
-        <div className="text-gray-400">{priceLabel}</div>
-      </div>
+      {price && (
+        <div className="text-center mb-6">
+          <div className="text-3xl font-bold gradient-text mb-2">${price}</div>
+          <div className="text-gray-400">{priceLabel}</div>
+        </div>
+      )}
 
       <ul className="feature-list mb-8 space-y-3">
         {features.map((v, i) => (
@@ -48,8 +52,8 @@ export default function SolutionCard({
         ))}
       </ul>
 
-      <div className="text-center">
-        <button className="btn-primary w-full py-3 rounded-lg text-white font-medium">
+      <div className="text-center mt-auto  ">
+        <button className="btn-primary w-full py-3 rounded-lg text-white font-medium cursor-pointer">
           {buttonLabel}
         </button>
       </div>
